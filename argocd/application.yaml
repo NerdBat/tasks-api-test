@@ -1,5 +1,5 @@
 # Jour 4 : décrit à Argo CD quel dépôt surveiller et où déployer.
-# À MODIFIER : remplacez <votre-compte-github> par votre identifiant GitHub (minuscules).
+# À MODIFIER : remplacez NerdBat par votre identifiant GitHub (minuscules).
 # Appliquer avec : kubectl apply -f argocd/application.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<votre-compte-github>/tasks-config.git
+    repoURL: https://github.com/NerdBat/tasks-config.git
     targetRevision: main
     path: k8s
   destination:
